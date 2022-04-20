@@ -1,10 +1,16 @@
-import "./App.css";
+import React, { useState } from 'react';
+import Menu from './Menu';
+import Categories from './Categories';
+import items from './Data';
+const allCategories = ['all', ...new Set(items.map((item) => item.category))];
 
 function App() {
 
+
   return (
-    <div className="App">
-    </div>
+<div>
+  Food Menu
+</div>
   );
 }
 
